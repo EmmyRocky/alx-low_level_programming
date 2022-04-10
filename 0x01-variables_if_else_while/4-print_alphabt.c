@@ -6,11 +6,12 @@
  * Description: print numbers 0 to 9 on one line
  * Return: 0
  */
+
 int main(void)
 {
-	char alphabet;
+char alphabet;
 
-	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
 if (alphabet == 'q')
 continue;
