@@ -8,13 +8,17 @@
  */
 
 int main(void)
+
 {
-char c;
+char alphabet;
 
-for (c = 'z'; c >= 'a'; --c)
-putchar(c);
+for (alphabet = 122 ; alphabet >= 97; alphabet--)
+{
+putchar(alphabet);
+}
 
-putchar('\');
+putchar('\n');
 
 return (0);
+
 }
