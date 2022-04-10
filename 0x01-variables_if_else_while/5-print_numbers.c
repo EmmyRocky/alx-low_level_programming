@@ -1,9 +1,11 @@
 #include <stdio.h>
+
 /**
- * see lets make this task 5 work
- *
- * we will be successful
+ * main - Entry point
+ * 
+ * Return: Always 0 (success/correct)
  */
+
 int main(void)
 
 {
