@@ -2,8 +2,9 @@
 /**
  * main - Entry point
  *
- * return: end program
+ * Return: end program
  */
+
 int main(void)
 {
 unsigned long int i, j, k, j1, j2, k1, k2;
