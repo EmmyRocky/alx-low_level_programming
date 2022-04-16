@@ -5,7 +5,6 @@
  *
  * Return: int
  */
-
 int main(void)
 {
 
