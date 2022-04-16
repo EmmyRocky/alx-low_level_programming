@@ -7,40 +7,20 @@
  */
 int main(void)
 {
+int n = 1;
 
-int p = 100;
-int i;
-
-i = 1;
-while (i <= p)
+while (n < 100)
 {
-if (i % 3 == 0 && i % 5 == 0)
-{
-printf("FizzBuzz");
+	if (n % 15 == 0)
+		printf("FizzBuzz ");
+	else if (n % 5 == 0)
+		printf("Buzz ");
+	else if (n % 3 == 0)
+		printf("Fizz ");
+	else
+		printf("%d ", n);
+	n++;
 }
-
-else if (i % 3 == 0)
-{
-printf("Fizz");
-}
-
-else if (i % 5 == 0)
-{
-if (i < p)
-printf("Buzz");
-
-else
-printf("Buzz");
-}
-
-else
-{
-printf("%i", i);
-}
-
-i++;
-
-}
-printf("\n");
+printf("Buzz\n");
 return (0);
 }
