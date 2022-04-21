@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * rev_string function
+ * rev_string - function
  *
  * @s: pointer of parameter
  */
@@ -12,7 +12,7 @@ void rev_string(char *s)
 	int e;
 
 	while (s[length] != '\0')
-		length++;
+	length++;
 	e = length - 1;
 	length /= 2;
 	while (length--)
