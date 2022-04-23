@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * is_numerical - check if it is a digit
  * @n: Number
@@ -40,5 +41,4 @@ int _atoi(char *s)
 	}
 
 	return (number *sign);
-
 }
