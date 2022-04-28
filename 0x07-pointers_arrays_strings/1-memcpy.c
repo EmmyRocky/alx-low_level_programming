@@ -5,7 +5,7 @@
  *
  *  @n: figures of bytes to duplicate
  *  @src: memory area to duplicate
- *  @Dest: deestination of memory area
+ *  @dest: deestination of memory area
  *
  * Return: pointer to dest.
  */
