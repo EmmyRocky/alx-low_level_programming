@@ -3,9 +3,10 @@
 /**
  * @argc: This is the argument counter in the program
  * @argv: Contains the vector of strings
- * main - Print out the name of the program
+ * main - Entry point with arguments
  *
  * Return: Always 0 (Success)
+ *
  *
  */
 int main(int argc, char *argv[])
