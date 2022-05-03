@@ -16,14 +16,4 @@ int main(int argc, char *argv[])
 
 	if (argc < 3)
 	{
-		printf("Error\n");
-		return (1);
-	}
-
-	u = atoi(argv[1]);
-	f = atoi(argv[2]);
-
-	printf("%d\n", u * f);
-
-	return (0);
-}
+		printf("Erro
