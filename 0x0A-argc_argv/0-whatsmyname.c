@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
- * @argc: This is the argument counter in the program
- * @argv: Contains the vector of strings
- * main - Entry point with arguments
+ * Main - - Print the Actual name of the program
+ * @argc: Initiates Argument counts
+ * @argv: vector of strings
  *
  * Return: Always 0 (Success)
  *
- *
  */
+
 int main(int argc, char *argv[])
 {
 	(void)argc;
