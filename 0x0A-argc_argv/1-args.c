@@ -4,7 +4,7 @@
 /**
  * Main - Initiate program
  *
- * @argc: Argument Counts
+ * @argc: Argument Counts add this
  * @argv: Vector of strings
  *
  * Return: Always 0 (Success)
