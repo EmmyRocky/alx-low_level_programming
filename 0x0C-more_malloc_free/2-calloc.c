@@ -8,7 +8,7 @@
  *
  * *_calloc - allocates memory for an array
  *
- * Return: pointer to allocated mem.
+ * Return: pointer to allocated memory
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
@@ -28,5 +28,5 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		*(t + v) =0;
 	}
-	return (v);
+	return (t);
 }
