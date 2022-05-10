@@ -6,7 +6,7 @@
 /**
  * *malloc_checked - this is going to be a function that allocates memory
  *
- * b: parameter
+ * @b: parameter
  * Return: Return the Pointer.
  *
  */
