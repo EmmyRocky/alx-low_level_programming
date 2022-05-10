@@ -1,6 +1,5 @@
-#include <stdlib.h>
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * @size: size of the listed elements
  *
@@ -10,7 +9,6 @@
  *
  * Return: pointer to allocated memory
  */
-
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *t;
