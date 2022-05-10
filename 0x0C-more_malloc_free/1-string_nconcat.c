@@ -1,53 +1,54 @@
 #include "main.h"
+#include <stdlib.h>
 
 /**
- * @s1: number one string
- * @s2: number two string
- * string_nconcat - concatenates two strings
  *
- * @n: max bytes of s2
+ * @s1: string for the first
+ * @s2: string for the second
+ * @n: maximum bytes of s2
  *
- * Return: pointer points to a newly allocated space in memory
+ * *string_nconcat - Function that concatenates two strings
+ *
+ * Return: char pointer
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *g;
-	unsigned int size1 = 0, size2 = 0, r;
+	char *w;
+	unsigned int v, n1 = 0, n2 = 0, g, h;
 
-	if (s1 == NULL)
+	if (s1 != NULL)
+	{
+		while (s1[n1] != 0)
+			n1++;
+	}
+	else
 		s1 = "";
-
-	if (s2 == NULL)
-		S2 = "";
-
-	while (s1[size1] != '\0')
+	if (s2 != NULL)
 	{
-		size1++;
+		while (s2[n2] != 0)
+			n2++;
 	}
+	else
+		s2 = "";
 
-	while (s2[size2] != '\0')
+	if (n < n2)
+		v = n;
+	else
+		v = n2;
+	w = malloc(sizeof(char) * (n1 + v + 1));
+
+	if (a == NULL)
+		return (NULL);
+	for (g = 0; g < n1; g++)
 	{
-		size2++;
+		w[g] = s1[g];
 	}
+	for (h = 0; h < v; h++)
+	{
+		w[g + h] = s2[h];
+	}
+	w[g + h] = 0;
 
-	if (n > size2)
-	n =  size2;
-	g = malloc((size1 + n + 1) * sizeof(char));
-
-	if (g == NULL)
-		return (0);
-
-	for (; r < (size1; r++)
-			{
-			g[r] = s1[r];
-			}
-
-			for (; r < (size1 + n); r++)
-			{
-			g[r] = s2[r - size1];
-			}
-			g[r] = '\0';
-
-			return (g);
-			}
+	return (w);
+}
