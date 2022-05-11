@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
-
 /**
  * @min: minimum range of values saved
  * @max: maximum range of values saved and number of elements
@@ -9,7 +7,6 @@
  *
  * Return: pointer to the new array
  */
-
 int *array_range(int min, int max)
 {
 	int *arr, v = 0, w = min;
