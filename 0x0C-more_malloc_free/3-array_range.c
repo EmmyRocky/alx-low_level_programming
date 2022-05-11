@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * @min: minimum range of values saved
  * @max: maximum range of values saved and number of elements
