@@ -1,83 +1,83 @@
-#include "dog.h"
 #include <stdlib.h>
+#include "dog.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: the length of the string
+ * @src: data to replicate
+ * _copy - make a copy of passed in argument
+ * Return: Pointer
  */
 
-int _strlen(char *s)
+char *_copy(char *src)
 {
-	int u;
+	char *ptr;
+	int i, len;
 
-	x = 0;
-	whiel (s[x] != '\0')
-		u++;
-	return (x);
+	if (src == NULL)
+	{
+		return (NULL);
+	}
+
+	for (len = 0; src[len] != '\0'; len++)
+		;
+
+	ptr = malloc(sizeof(char) * (len + 1));
+
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+		ptr[i] = src[i];
+	}
+
+	ptr[i] = '\0';
+	return (ptr);
 }
 
 /**
- * *_strcpy -copies the string pointed to by src
- * as well as the Ending null byte (\0)
- * straight to the buffer pointed to by dest
- * @dest: pointer to the buffer in which we copy the string
- * @src: string to be copied
- *
- * Return: the pointer to dest
- */
-char *_strcpy(char *dest, char *src)
-{
-	int len, i;
-
-	len = 0;
-
-	while (src[len] != '\0')
-	{
-		len++;
-	}
-
-	for (i = 0; i < len; i++)
-	{
-		dest[i] = src[i];
-	}
-	dest[i] = '\0';
-
-	return (dest);
-}
-
-/**
- * new_dog - creates a new dog
- * @name: name to initialize
- * @age: age to initialize
- * @owner: owner to initialize
- *
- * Return: owner to initialize
+ * new_dog - create a new dog variable
+ * @name: Name of the dog
+ * @age: Dogs age
+ * @Owner: Owner of the dog
+ * Return: Pointer to new dog variable
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	struct dog *n;
+	dog_t *fredda;
+	char *new_name, *new_owner;
 
-	n = malloc(sizeof(struct dog));
-	if (n == NULL)
-		return (NULL);
-
-	n->name = malloc(_strlen(name) + 1);
-	if (n->name == NULL)
+	if (name == NULL || owner == NULL)
 	{
-		free(n);
 		return (NULL);
 	}
-	n->age = age;
-	n->owner = malloc(_strlen(owner) + 1);
-	if (n->owner == NULL)
+
+	fredda = malloc(sizeof(dog_t));
+	if (fredda == NULL)
 	{
-		free(n);
-		free(n->name);
 		return (NULL);
 	}
-	_strcpy(n->name, name);
-	_strcpy(n->owner, owner);
-	return (n);
+
+	new_name = _copy(name);
+	if (new_name == NULL)
+	{
+		free(fredda);
+		return (NULL);
+	}
+	(*fredda).name = new_name;
+
+	(*fredda).age = age;
+
+	new_owner = _copy(owner);
+	if (new_owner == NULL)
+	{
+		free((*fredda).name);
+		free(fredda);
+		return (NULL);
+	}
+	(*fredda).owner = new_owner;
+
+	return (fredda);
 }
