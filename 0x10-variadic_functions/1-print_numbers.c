@@ -10,17 +10,17 @@
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list;
-	unsigned int q;
+	unsigned int i;
 
 	separator = (separator !=NULL) ? separator : "";
 
 	va_start(list,n);
-	for (q = 0; q < n; q++)
+	for (i = 0; i < n; i++)
 	{
-		if (q > 0)
+		if (i > 0)
 		{
 			printf("%d", va_arg(list, int));
 		}
 		
-		printf("\n");
+		putchar(10);
 	}
