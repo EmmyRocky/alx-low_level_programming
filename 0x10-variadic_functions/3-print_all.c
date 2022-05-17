@@ -41,5 +41,5 @@ void print_all(const char * const format, ...)
 		}
 		x++;
 	}
-	printf("\n);
+	putchar(10);
 	va_end(list);
