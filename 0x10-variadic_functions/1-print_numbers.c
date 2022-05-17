@@ -3,8 +3,8 @@
 /**
  * print_numbers - only prints numbers
  *
- * @separator - this is the string that is meant to be printed b/w numbers
- * @n: number of int passed to the function.
+ * @separator - this is the string that is meant to be printed b/w number
+ * @n: number of int passed to the function
  */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
@@ -25,4 +25,4 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	}
 		
 		putchar(10);
-	}
+}
