@@ -1,5 +1,5 @@
-#ifndef HEADER_FILE
-#define HEADER_FILE
+#ifndef _LISTS_
+#define _LISTS_
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,11 +7,11 @@
 
 /**
  * struct list_s - singly linked list
- * @len: length of the string
  * @str: string - (memory allocated string)
- * @next: points to the next node
+ * @len: length of the string
+ * @next - points to the next node
  *
- * Description: singly linked list node struct
+ * Description: singly linked list node structure
  */
 typedef struct list_s
 {
