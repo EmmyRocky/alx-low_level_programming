@@ -1,10 +1,10 @@
 #include "lists.h"
 /**
- * add_node_end - function that adds a new node just at the end of the list_t list
+ * add_node_end - function that adds a new node jst @ d end of d list_t list
  *
  * @head: Parameter that point to the head of linked list
  *
- * @str: Parameter with the string
+ * @str: Parameter wit d string
  *
  * Return: the address of the new NULL or the element if it failed
  */
