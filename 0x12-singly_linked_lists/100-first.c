@@ -1,13 +1,12 @@
 #include <stdio.h>
-
-void print_something(void) __attribute__ ((constructor));
-
 /**
- * print_something - prints a message before the main
+ * myCleanupFun - function that prints something before
+ * the main function is executed.
  */
+void myCleanupFun(void) __attribute__ ((constructor));
 
-void print_somthing(void)
+void myCleanupFun(void)
 {
-	printf("You're beat! and yet, you must allow,\n"
-		"I bore my house upon y back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
