@@ -3,7 +3,7 @@
  * list_len - function that returns the number of
  * elements inside a linked list_t list.
  *
- * @h - Parameter with the list
+ * @h: Parameter with the list
  *
  * Return: the number of nodes
  */
