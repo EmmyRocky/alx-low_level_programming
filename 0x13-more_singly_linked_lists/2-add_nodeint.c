@@ -3,7 +3,7 @@
  * add_nodeint - function that adds a new node at the
  * beginning of a listint_t list.
  *
- * @head: parameter which is referred to as the double pointer to the top of the linked list
+ * @head: Parameter double pointer to the head
  * @n: Parameter that holds or contains the value of the number data
  *
  * Return: The new node
