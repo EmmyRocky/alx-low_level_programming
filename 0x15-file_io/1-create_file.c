@@ -2,8 +2,9 @@
 
 /**
  * create_file - function that creates a file
- * @filename: simply means filename as the name implies
+ * @filename: filename
  * @text_content: this is the content that is written in the file
+ *
  * Return: 1 if it success. -1 if it fails.
  */
 
